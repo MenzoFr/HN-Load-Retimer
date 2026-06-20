@@ -4,7 +4,7 @@ Removes loading screens and retimes a run for HN1.
 
 ## Download
 
-Grab the latest release from the [Releases](../../releases) page — it includes
+Grab the latest release from the [Releases](../../releases) page it includes
 the compiled exe and all dependencies. No Python installation needed.
 
 ## Running from source
