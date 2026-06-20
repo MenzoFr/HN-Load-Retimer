@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""
-HN1 Load Retimer  -  removes loading screens and retimes a run.
-
-Put next to 1.png / 2.png / 3.png, icon.ico, icon_logo.png and
-ffmpeg.exe / ffprobe.exe / yt-dlp.exe / deno.exe (or have those on PATH), then run:
-    python retime_gui.py
-
-Requirements (install once):
-    pip install -U numpy pillow scipy customtkinter
-"""
-
 import os
 import re
 import json
