@@ -51,17 +51,17 @@ This project requires external binaries for video downloading, processing, and f
 
 1. **Paste a YouTube link** or **browse for a local video file**
 2. Choose your run type:
-   - **Fullscreen run** — analyses the entire frame
-   - **Windowed run** — click *Select game area* and drag a box around the game window to ignore the desktop/background
-3. **Set your start and end times** — you can type them manually or click **Paste** to paste from clipboard
+   - **Fullscreen run :** analyses the entire frame (for runs where the game takes the entire screen)
+   - **Windowed run :** click *Select game area* and drag a box around the game window to ignore the desktop/background/bands
+3. **Set your start and end times :** you can type them manually or click **Paste** to paste from clipboard
 4. Click **Retime**
 
 ### Finding timestamps
 
 You can get precise frame-accurate timestamps from:
 
-- **YouTube** — pause the video, use **`,`** to step back a frame and **`;`** to step forward. On the correct frame, right-click the video → **Copy debug info**, then paste it into the tool.
-- **Frame-by-frame sites** like [somewes.com/frame-count](https://somewes.com/frame-count/) — copy the timestamp and paste it directly.
+- **YouTube** pause the video, use **`,`** to step back a frame and **`;`** to step forward. On the correct frame, right-click the video → **Copy debug info**, then paste it into the tool.
+- **Frame-by-frame sites** like [somewes.com/frame-count](https://somewes.com/frame-count/) copy the "Video Time" and paste it directly.
 
 Accepted formats: `1:32`, `0:01:32.500`, `92.5`, or YouTube debug info JSON.
 
