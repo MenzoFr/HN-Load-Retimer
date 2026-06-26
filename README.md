@@ -1,4 +1,4 @@
-# HN1 Load Retimer
+# HN Load Retimer
 
 Removes loading screens and retimes a run for HN1 or/and HN2.
 
@@ -49,7 +49,7 @@ This project requires external binaries for video downloading, processing, and f
 
 ## Usage
 
-1. **Paste a YouTube link** or **browse for a local video file**
+1. **Paste a YouTube/Twitch link** or **browse for a local video file**
 2. Choose your run type:
    - **Fullscreen run :** analyses the entire frame (for runs where the game takes the entire screen)
    - **Windowed run :** click *Select game area* and drag a box around the game window to ignore the desktop/background/bands
