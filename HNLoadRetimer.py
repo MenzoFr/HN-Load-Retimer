@@ -593,6 +593,7 @@ class App(ctk.CTk):
         super().__init__()
         self.q = queue.Queue()
         self.last_report = ""
+        self.last_final = ""
         self._total = 1
         self.crop_rect = None
         self.resolved_video = None
@@ -741,7 +742,13 @@ class App(ctk.CTk):
         self.log.configure(state="disabled")
 
     def copy_report(self):
-        self.clipboard_clear(); self.clipboard_append(self.last_report)
+        # Copy a ready-to-paste mod note with the final time as MM:SS.mmm
+        # (or H:MM:SS.mmm for runs over an hour), e.g. "Mod Note: Retimed to 5:05.333."
+        try:
+            note = f"Mod Note: Retimed to {fmt_box(parse_time(self.last_final))}."
+        except Exception:
+            note = f"Mod Note: Retimed to {self.last_final}."
+        self.clipboard_clear(); self.clipboard_append(note)
 
     def windowed(self):
         return self.mode.get() == "Windowed run"
@@ -862,6 +869,7 @@ class App(ctk.CTk):
                 elif kind == "report":
                     report, final = val
                     self.last_report = report
+                    self.last_final = final
                     self.result.configure(text=final)
                     self.copy_btn.configure(state="normal")
                     self.log_line(""); self.log_line(report)
