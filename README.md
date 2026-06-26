@@ -17,7 +17,7 @@ the compiled exe and all dependencies. No Python installation needed.
    ```
 4. Run:
    ```
-   python retime.py
+   python HNLoadRetimer.py
    ```
 
 ## Building from source
@@ -32,7 +32,7 @@ the compiled exe and all dependencies. No Python installation needed.
    - `ffmpeg.exe`, `ffprobe.exe`, `yt-dlp.exe`, `deno.exe`
 4. Build:
    ```
-   pyinstaller --noconsole --onefile --icon=dependencies/icon.ico retime.py
+   pyinstaller --noconsole --onefile --icon=dependencies/icon.ico HNLoadRetimer.py
    ```
 5. The compiled exe will be at `dist/retime.exe`. Place it next to the `dependencies/` folder to use.
 
