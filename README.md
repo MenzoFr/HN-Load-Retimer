@@ -1,6 +1,6 @@
 # HN1 Load Retimer
 
-Removes loading screens and retimes a run for HN1.
+Removes loading screens and retimes a run for HN1 or/and HN2.
 
 ## Download
 
